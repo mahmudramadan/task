@@ -15,4 +15,5 @@ class Test
         var_dump($data);
     }
 }
- $rectangle_1 = new Test();
+$recInstance = new RectangleClass();
+ $rectangle_1 = new Test($recInstance);

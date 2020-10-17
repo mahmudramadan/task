@@ -25,6 +25,15 @@ class RectangleClass
         $this->setWidthOrHeight('width');
         $this->setWidthOrHeight('height');
     }
+    public static function getInstance()
+    {
+        if (!self::$instance) {
+            self::$instance = new RectangleClass();
+        }
+
+        return self::$instance;
+    }
+
     public function setWidthOrHeight($var_name , $error = 0 )
     {
         echo $error != 0 ? "Error $var_name must be integer, Please re-enter $var_name value:" : "Enter $var_name value:";
