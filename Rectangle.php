@@ -1,8 +1,7 @@
 <?php
+include './vendor/autoload.php';
 use Classes\RectangleClass;
-use Classes\MainModel;
-use Classes\ConnectDb;
-class Test
+  class Test
 {
     /**
      * Class constructor.
